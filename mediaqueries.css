@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+#skills, .skills-details-container {
+  margin-top: 2rem;
+
+}
+#profile, .section-container {
+  display: block;
+}
+
+.arrow {
+  display: none;
+}
+
+section, .section-container {
+  height: fit-content;
+}
+
+section {
+  margin: 0.5%;
+}
+
+.section__pic-container{
+  width: 275px;
+  height: 275px;
+  margin: o auto 2rem;
+}
+
+.about-containers {
+ margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-containers {
+    flex-direction: row; /* Stacks the containers vertically */
+    align-items: center; /* Centers the containers */
+  }
+
+  .details-container {
+    max-width: 100%; /* Allows the containers to take up the full width */
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    flex-direction: column; /* Stacks the containers vertically */
+    align-items: center; /* Centers the containers */
+  }
+
+  .details-container {
+    max-width: 100%; /* Allows the containers to take up the full width */
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #contact, footer {
+        height: 40vh; /* Adjusts the height for smaller screens */
+    }
+
+    #profile {
+        height: 83vh; /* Adjusts the height for smaller screens */
+        margin-bottom: 0; /* Adjusts the margin for smaller screens */
+    }
+
+    article {
+      font-size: 1rem; /* Adjusts the font size for smaller screens */
+    }
+
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+
+    .about-containers, .contact-info-upper-container, .btn-containers {
+      flex-wrap: wrap;
+    }
+  }

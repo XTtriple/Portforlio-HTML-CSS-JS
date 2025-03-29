@@ -1,0 +1,561 @@
+/* GENERAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rowdies", sans-serif;
+  background-color: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* transition */
+
+a, .btn {
+  transition: all 0.3s ease;
+}
+
+/*desktop nav*/
+
+nav, .nav-links {
+  display:flex;
+}
+
+nav{
+  position: relative; /* Ensure the parent container has a relative position */
+  justify-content: space-around;
+  align-items: center;
+  height: 16vh;
+}
+
+.nav-links{
+  gap: 2rem;
+  list-style: none;
+  font-size: 2rem;
+
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration-color: #ffffff;
+  
+}
+
+a:hover {
+  text-decoration: none;
+  color: #b3b0b08a;
+  text-decoration: underline;
+text-underline-offset: 0.5rem;
+text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+.logo-img {
+    width: 350px; /* Adjust the width as needed */
+    height: 400px; /* Maintain aspect ratio */
+    margin-top: 200px; /* Adjust the top margin as needed */
+} 
+
+
+/*hamburger menu*/
+
+#hamburger-menu {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: none; /* Hide by default */
+  cursor: pointer;
+  top: 10px; /* Adjust this value as needed */
+  left: 10px; /* Adjust this value as needed */
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background-color: rgb(0, 0, 0);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;     
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* Hide by default */
+#hamburger-nav {
+  display: none;
+}
+
+#desktop-nav .logo {
+  display: block;
+}
+
+/* Media query to show hamburger menu below 1200px */
+@media (max-width: 1200px) {
+  .hamburger-menu {
+    display: inline-block; /* Show when screen width is below 1200px */
+  }
+  
+  #hamburger-nav {
+    display: flex; /* Show when screen width is below 1200px */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #desktop-nav {
+    display: none; /* Hide desktop nav when screen width is below 1200px */
+  }
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: auto;
+}
+
+.section-container {
+  display: flex;
+}
+
+#Home {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section_pic-container {
+  display: flex;
+  height: 600px;
+  width: 600px;
+  margin: auto 0;
+}
+
+.section__text { 
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 0.7rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border:rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+ cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+background: rgb(53, 53, 53);
+color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background:none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255)0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+
+.section__text__p1 {
+  font-weight: 700;
+  margin-left: 3rem;
+
+  }
+
+
+  
+  #about .section__text__p1, #about .title {
+    margin-left: 0rem; /* Moves the text to the right by adding a left margin */
+    text-align: center; /* Ensures the text remains left-aligned */
+  }
+  
+  #about {
+    position: relative;
+  
+  }
+  
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .about-containers, .about-details-container {
+  display: flex;
+    
+  }
+  
+  .about-pic {
+    border-radius: 2rem;
+    width: 100%;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+  
+  .details-container, .details-containers {
+    padding: 1.5rem;
+    flex: 1rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(85, 85, 85) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+
+  .details-container, .details-containers {
+    max-width: 100%; /* Allows the containers to take up the full width */
+    min-width: 600px; /* Ensures a minimum width for the containers */
+    margin-left: 5rem; /* Adds left margin to the containers */
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 1 1rem;
+    margin-top: 1rem; /* Added a valid value */
+    font-size: larger;
+  }
+
+#about .section__text__p1,
+#about .title {
+  margin-left: 15rem; /* Moves the text to the right by adding a left margin */
+  text-align: center; /* Ensures the text remains left-aligned */
+}
+
+/* SKILLS SECTION */
+
+
+#Skills .section__text__p1, #Skills .title {
+  margin-left: 5rem; /* Moves the text to the right by adding a left margin */
+  text-align: center; /* Ensures the text remains left-aligned */
+}
+
+#Skills {
+  position: relative;
+}
+
+.skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+}
+
+
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.details-container.color-container {
+  padding: 1.5rem;
+  flex: 1rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(85, 85, 85) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  max-width: 100%; /* Allows the containers to take up the full width */
+  min-width: 600px; /* Ensures a minimum width for the containers */
+  margin-left: 5rem; /* Adds left margin to the containers */
+}
+
+
+#projects .section__text__p1, #projects .title {
+  margin-left: 5rem; /* Moves the text to the right by adding a left margin */
+  text-align: center; /* Ensures the text remains left-aligned */
+}
+
+
+/* CONTACT SECTION */
+
+#contact .section__text__p1, #contact .title {
+  margin-left: 5rem; /* Moves the text to the right by adding a left margin */
+  text-align: center; /* Ensures the text remains left-aligned */
+  margin-top: 10rem;
+}
+
+#contact .section__text__p1 {
+font-size: x-large;}
+
+#contact .section__text__p1 {
+  margin-bottom: 0.5rem; /* Reduces the space below "Get in Touch" */
+}
+
+#contact .title {
+  margin-top: 0; /* Removes or reduces the space above "With Me" */
+}
+
+
+#contact {
+  text-align: center; /* Centers all text and elements */
+  padding: 4rem 2rem; /* Adds spacing around the section */
+  background: #f5f5f5; /* Matches the page background color */
+  margin-top: 10rem;
+}
+
+#contact .section__text__p1 {
+  font-size: 1.2rem; /* Smaller font size for "Get in Touch" */
+  color: #000; /* Black text color */
+  margin-bottom: 0.5rem; /* Reduces gap below "Get in Touch" */
+}
+
+#contact .title {
+  font-size: 2.5rem; /* Larger font size for "Contact Me" */
+  font-weight: bold; /* Makes the text bold */
+  margin-top: 0; /* Removes extra space above the title */
+  margin-bottom: 2rem; /* Adds spacing below the title */
+}
+
+#contact .section__text__p1, #contact .title {
+  margin-left: 1rem; /* Resets the left margin for centering */
+  text-align: center; /* Ensures the text remains centered */
+}
+
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-around; /* Distributes items evenly inside the container */
+  align-items: center; /* Aligns items vertically */
+  background: transparent; /* Makes the background transparent */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for subtle separation */
+  border-radius: 2rem; /* Rounds the corners */
+  padding: 0.5rem 1rem; /* Adjusts padding inside the box */
+  box-shadow: none; /* Removes the shadow for a flat appearance */
+  max-width: 400px; /* Limits the width of the contact box */
+  width: 100%; /* Ensures responsiveness */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+.contact-item {
+  display: flex; /* Enables flexbox for alignment */
+  align-items: center; /* Vertically centers the icon and text */
+  gap: 0.5rem; /* Adds spacing between the icon and text */
+}
+
+.contact-icon {
+  width: 30px; /* Adjust the width of the icons */
+  height: 30px; /* Adjust the height of the icons */
+  display: block; /* Ensures the icon behaves as a block element */
+}
+
+.email-icon {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+
+/* FOOTER */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+  margin-top: -15rem; /* Adjusts the top margin to create space above the footer */
+}
+
+footer p {
+  text-align: center;
+}
