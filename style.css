@@ -526,7 +526,7 @@ font-size: x-large;}
   border-radius: 2rem; /* Rounds the corners */
   padding: 0.5rem 1rem; /* Adjusts padding inside the box */
   box-shadow: none; /* Removes the shadow for a flat appearance */
-  max-width: 400px; /* Limits the width of the contact box */
+  max-width: 600px; /* Limits the width of the contact box */
   width: 100%; /* Ensures responsiveness */
   margin: 0 auto; /* Centers the container horizontally */
 }
