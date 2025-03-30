@@ -439,7 +439,16 @@ article .icon {
   background-color: rgb(250, 250, 250);
 }
 
-
+.button-container {
+  display: flex; /* Ensures buttons are aligned horizontally */
+  justify-content: center; /* Adds space between buttons */
+  align-items: center; /* Aligns buttons vertically */
+  width: 100%; /* Makes the container take up the full width of its parent */
+  max-width: 700px; /* Increases the maximum width of the container */
+  padding: 1rem; /* Adds internal spacing */
+  margin: 0 auto; /* Centers the container horizontally */
+  border-radius: 1rem; /* Optional: Rounds the corners */
+}
 
 .project-title {
   margin: 1rem;
@@ -449,6 +458,15 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.project-btn {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Set a specific font */
+  font-size: 16px; /* Set a specific font size */
+  font-weight: normal; /* Reset font weight */
+  text-transform: none; /* Ensure no text transformation (e.g., uppercase) */
+  text-decoration: none; /* Remove underline if applied */
+  color: #000; /* Set a specific text color */
 }
 
 .details-container.color-container {
