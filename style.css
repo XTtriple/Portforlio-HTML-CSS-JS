@@ -432,6 +432,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-bottom: 10rem;
 }
 
 .color-container {
@@ -513,7 +514,7 @@ font-size: x-large;}
   text-align: center; /* Centers all text and elements */
   padding: 4rem 2rem; /* Adds spacing around the section */
   background: #f5f5f5; /* Matches the page background color */
-  margin-top: 10rem;
+  margin-top: 60rem;
 }
 
 #contact .section__text__p1 {
