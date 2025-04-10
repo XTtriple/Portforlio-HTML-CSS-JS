@@ -489,6 +489,30 @@ article .icon {
   text-align: center; /* Ensures the text remains left-aligned */
 }
 
+#projects .arrow {
+  position: absolute;
+}
+.parent-container {
+  position: relative;
+}
+
+#projects .arrow {
+  position: absolute;
+  right: -5rem; /* Keep it aligned horizontally */
+  bottom: -10rem; /* Lower the arrow further */
+  transform: translateY(3rem); /* Alternative: Move it down by 3rem */
+}
+
+#projects {
+  height: auto; /* Ensure the container height adjusts dynamically */
+}
+
+.privacy-policy-icon {
+  width: 50px; /* Adjust the width as needed */
+  height: 20px; /* Maintain aspect ratio */
+  margin: 1rem; /* Add spacing around the image */
+  display: block; /* Ensure it behaves as a block element */
+}
 
 /* CONTACT SECTION */
 
