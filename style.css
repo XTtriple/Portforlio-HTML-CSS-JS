@@ -417,6 +417,10 @@ color: white;
   justify-content: space-around;
 }
 
+.article-container article:nth-child(5) {
+  margin-left: 2rem; /* Indents JSON to align with HTML */
+} 
+
 article {
   display: flex;
   width: 10rem;
