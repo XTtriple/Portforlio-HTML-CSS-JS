@@ -408,28 +408,25 @@ color: white;
   flex-direction: column;
 }
 
+/* Ensure the container uses Flexbox for alignment */
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to a new row */
+    justify-content: space-evenly; /* Distributes items evenly across the row */
+    align-items: center; /* Aligns items vertically */
+    gap: 2rem; /* Adds spacing between items */
+    max-width: 100%; /* Allows the container to stretch across the page */
+    margin: 0 auto; /* Centers the container */
 }
 
-.article-container article:nth-child(5) {
-  margin-left: 2rem; /* Indents JSON to align with HTML */
-} 
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
+/* Style individual articles for consistent sizing */
+.article-container article {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+    flex-direction: column; /* Stacks the icon and text vertically */
+    text-align: center; /* Centers the text */
+    width: 120px; /* Ensures consistent width for each skill */
+    margin: 0.5rem; /* Adds spacing around each skill */
 }
 
 /* PROJECTS SECTION */
@@ -511,11 +508,10 @@ article .icon {
   height: auto; /* Ensure the container height adjusts dynamically */
 }
 
-.privacy-policy-icon {
-  width: 50px; /* Adjust the width as needed */
-  height: 20px; /* Maintain aspect ratio */
-  margin: 1rem; /* Add spacing around the image */
-  display: block; /* Ensure it behaves as a block element */
+.project-img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 1rem auto; /* Optional: Center the image and add spacing */
 }
 
 /* CONTACT SECTION */
@@ -594,6 +590,12 @@ font-size: x-large;}
   width: 2.3rem;
 }
 
+/* WEATHER FORECAST IMAGE */
+
+.weather-forecast-icon-free-png.png {
+  width: 150px; /* Adjust the width as needed */
+  height: 20px; /* Maintain aspect ratio */
+}
 
 /* FOOTER */
 
